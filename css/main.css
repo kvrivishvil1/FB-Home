@@ -1,33 +1,15 @@
-a:link {
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+a:link, a:visited, a:hover, a:active {
     color: white;
     text-decoration: none;
 }
 
 a {
     display: inline-block;
-}
-
-/* visited link */
-a:visited {
-    color: white;
-    text-decoration: none;
-}
-
-/* mouse over link */
-a:hover {
-    color: white;
-    text-decoration: none;
-}
-
-/* selected link */
-a:active {
-    color: white;
-    text-decoration: none;
-}
-
-body, html {
-    height: 100%;
-    width: 100%;
 }
 
 header {
@@ -45,10 +27,6 @@ header {
     margin: 0 auto;
     display: flex;
     align-items: center
-}
-
-.fb-logo-out { 
-    float:left;
 }
 
 .link {
@@ -146,6 +124,7 @@ header {
     display: inline-block;
     vertical-align: middle;
     padding-right: 5px;
+    font-size: 15px;
 }
 
 .profile-name::after {
@@ -154,14 +133,19 @@ header {
 
 .home {
     padding: 3px 5px 3px 5px;
+    font-size: 15px;
 }
 
 .home-link {
     margin-left:-5px;
 }
 
-.header-right-text {
+.inline-block {
     display: inline-block;
+    vertical-align: middle;
+}
+
+.header-right-text {
     margin-right: 20px;
 }
 
@@ -171,7 +155,6 @@ header {
 }
 
 .header-right-icons {
-    display: inline-block;
     font-size: 0px;
     vertical-align: middle;
     position: relative;
@@ -189,42 +172,65 @@ header {
     background:#2c4e82;
 }
 
-.header-friend-request-icon {
-    background-image: url(https://facebook.com/rsrc.php/v3/yw/r/HrH-7nX4RPy.png);
+.header-icon {
     background-repeat: no-repeat;
     background-size: auto;
+    opacity: .6;
+    height: 24px;
+    width: 24px;
+}
+
+.header-icon:hover  {
+    opacity: .9;
+}
+
+.header-right-logout {
+    vertical-align: middle;
+    font-size:0px;
+}
+
+.friend-request-icon {
+    background-image: url(https://facebook.com/rsrc.php/v3/yw/r/HrH-7nX4RPy.png);
     background-position: 0 -275px;
-    opacity: .6;
-    height: 24px;
-    width: 24px;
 }
 
-.header-messages-icon {
+.messages-icon {
     background-image: url(https://facebook.com/rsrc.php/v3/yx/r/pzdnQfNKajS.png);
-    background-repeat: no-repeat;
-    background-size: auto;
     background-position: 0 -246px;
-    opacity: .6;
-    height: 24px;
-    width: 24px;
 }
 
-.header-notifications-icon {
+.notifications-icon {
     background-image: url(https://facebook.com/rsrc.php/v3/yw/r/HrH-7nX4RPy.png);
-    background-repeat: no-repeat;
-    background-size: auto;
     background-position: 0 -425px;
-    opacity: .6;
-    height: 24px;
-    width: 24px;
 }
 
 .header-icons-links {
     padding: 2px 2px 2px 2px;
 }
 
-.opacity:hover  {
-    opacity: .8;
+.help-icon {
+    background-image: url(https://facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
+    background-position: 0 -1063px;
+    width: 20px;
+    height: 20px;
 }
 
-/* facebook.com/rsrc.php/v3/yx/r/pzdnQfNKajS.png */
+.wrap-logout-icon {
+    margin-left: 5px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.logout-icon {
+    background-image: url(https://facebook.com/rsrc.php/v3/yv/r/f6VozFvfWEj.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -1190px;
+    display: block;
+    height: 16px;
+    opacity: .6;
+    overflow: hidden;
+    text-indent: -999px;
+    white-space: nowrap;
+    width: 16px;
+}
