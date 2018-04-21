@@ -1,0 +1,230 @@
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a {
+    display: inline-block;
+}
+
+/* visited link */
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+/* mouse over link */
+a:hover {
+    color: white;
+    text-decoration: none;
+}
+
+/* selected link */
+a:active {
+    color: white;
+    text-decoration: none;
+}
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+header {
+    width: 100%;
+    height: 42px;
+    background-color: #4267b2;
+    border-bottom: 1px solid #29487d;
+    color: #fff;
+    display: flex;
+    align-items: center;
+}
+
+.content {
+    width: 1030px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center
+}
+
+.fb-logo-out { 
+    float:left;
+}
+
+.link {
+    border-radius: 5px;
+    padding: 3px;
+    display: inline-block;
+}
+
+.link:hover {
+    background-color: #3963a3;
+}
+
+.fb-logo {
+    background-image: url(https://facebook.com/rsrc.php/v3/yx/r/pzdnQfNKajS.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -171px;
+    height: 24px;
+    width: 24px;
+}
+
+.search-area {
+    width: 660px;
+    display: flex;
+    align-items: center;
+    margin-left: 5px;
+    display: inline-block;
+}
+
+.input-out {
+    display: inline-block;
+    display: flex;
+}
+
+.search {
+    width: 400px;
+    padding-right: 50px;
+    padding-left: 5px;
+}
+
+.search-button {
+    display: inline-block;
+    height: 22px;
+    width: 45px;
+    display: flex;
+    align-items: center;
+    background-color: #eff2f7;    
+    margin-left: -45px;
+    margin-top: 1px;
+}
+
+.search-icon {
+    background-image: url(https://facebook.com/rsrc.php/v3/yw/r/HrH-7nX4RPy.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -618px;
+    height: 14px;
+    width: 14px;
+    position: relative;
+    left:50%;
+    transform: translateX(-50%);
+}
+
+.search-button:hover {
+    background-color: #e1e3e8
+}
+
+.avatar-link {
+    display: inline-block;
+    position: relative;
+}
+
+.avatar-link::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width:1px;
+    height:20px;
+    top:4px;
+    right:0;
+    background:#2c4e82;
+}
+
+.profile-image {
+    background: url(../content/avatar.jpg);
+    background-size:contain;
+    height: 24px;
+    width: 24px;
+    border-radius: 12px;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.profile-name {
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 5px;
+}
+
+.profile-name::after {
+    border-right: 1px solid #315791;
+}
+
+.home {
+    padding: 3px 5px 3px 5px;
+}
+
+.home-link {
+    margin-left:-5px;
+}
+
+.header-right-text {
+    display: inline-block;
+    margin-right: 20px;
+}
+
+.header-right {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.header-right-icons {
+    display: inline-block;
+    font-size: 0px;
+    vertical-align: middle;
+    position: relative;
+    margin-right:10px;
+}
+
+.header-right-icons::after {
+    content: "";
+    display: block;
+    position: absolute;
+    width:1px;
+    height:20px;
+    top:4px;
+    right:-10px;
+    background:#2c4e82;
+}
+
+.header-friend-request-icon {
+    background-image: url(https://facebook.com/rsrc.php/v3/yw/r/HrH-7nX4RPy.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -275px;
+    opacity: .6;
+    height: 24px;
+    width: 24px;
+}
+
+.header-messages-icon {
+    background-image: url(https://facebook.com/rsrc.php/v3/yx/r/pzdnQfNKajS.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -246px;
+    opacity: .6;
+    height: 24px;
+    width: 24px;
+}
+
+.header-notifications-icon {
+    background-image: url(https://facebook.com/rsrc.php/v3/yw/r/HrH-7nX4RPy.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    background-position: 0 -425px;
+    opacity: .6;
+    height: 24px;
+    width: 24px;
+}
+
+.header-icons-links {
+    padding: 2px 2px 2px 2px;
+}
+
+.opacity:hover  {
+    opacity: .8;
+}
+
+/* facebook.com/rsrc.php/v3/yx/r/pzdnQfNKajS.png */
