@@ -31,16 +31,15 @@ var explore = [
     }
 ];
 
-var c = document.querySelector('.explore');
-var d = c.querySelector('.list-item');
+var a = document.querySelector('.explore');
+var b = a.querySelector('.list-item');
 
 
 explore.forEach(function (element, idx) {
-    var clone = d.cloneNode(true);
-    if (idx == 0) clone = d;
+    var clone = b.cloneNode(true);
+    if (idx == 0) clone = b;
     clone.querySelector('.navigation-bar-text').innerHTML = element.name;
     clone.querySelector('.navigation-pages-icon').style.backgroundImage = element.src;
     clone.querySelector('.navigation-pages-icon').style.backgroundPosition = element.offset;
-    c.appendChild(clone);
-
+    a.appendChild(clone);
 });

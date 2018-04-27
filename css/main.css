@@ -30,10 +30,15 @@ header {
 }
 
 .container {
-    width: 1030px;
+    width: 1012px;
     margin: 0 auto;
     padding-right:205px;
     justify-content: space-between;
+    font-size:0;
+}
+
+.container > * {
+    font-size:13px;
 }
 
 .link {
@@ -248,13 +253,15 @@ header {
 }
 /*--------------------------    End Of Header ---------------------*/
 
-
+/*----------------------- main ------------------*/
 .main {
     padding-top:55px;
     width: 100%;
     min-height: 100%;
     background-color: gainsboro;
 }
+
+/*----------------------- main-left ------------------*/
 
 .navigation-bar {    
     vertical-align: top;
@@ -264,9 +271,10 @@ header {
 }
 
 .list {
-    padding-top:20px;
     list-style-type: none;
-    padding: 0px;
+    padding: 0;
+    margin:0;
+    margin-top:15px;
     width:100%;
 }
 
@@ -294,13 +302,6 @@ header {
 .navigation-pages-icon {
     vertical-align: middle;
 }
-
-/* background-image: url(/rsrc.php/v3/yk/r/Tp18fjqp6v5.png);
-background-size: 22px 542px;
-background-repeat: no-repeat;
-display: inline-block;
-height: 16px;
-width: 16px; */
 
 .dots {
     color:#a5a5a5;
@@ -349,13 +350,16 @@ width: 16px; */
 .create:hover {
     text-decoration: underline;
 }
+/*----------------------- end of main left ------------------*/
 
+/*-------------------- main middle ----------------------*/
 .news-feed {
     display: inline-block;
     width: 500px;
-    padding-right: 20px;
+    padding-right: 10px;
 }
 
+/*----------------------- write post ------------------*/
 .write-post {
     width: 100%;
     height: 155px;
@@ -431,8 +435,11 @@ width: 16px; */
 }
 
 .post-place {
-    width:100%;
     height:71px;
+    padding: 10px 0 20px 0;
+    margin: 0 10px 0 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #eaeaea;
     position: relative;
 }
 
@@ -447,14 +454,6 @@ width: 16px; */
     left: 60px;
     border-top:1px solid #eaeaea;
     border-left:1px solid #eaeaea;
-}
-
-.post-place-inner {
-    padding: 10px 0 20px 0;
-    margin: 0 10px 0 10px;
-    width: 100%;
-    box-sizing: border-box;
-    border-bottom: 1px solid #eaeaea;
 }
 
 .post-text {
@@ -507,11 +506,62 @@ width: 16px; */
     font-size: 15px;
 }
 
-.my-day {
+/*----------------------- end of write post ------------------*/
+
+/*---------------------------- main right ---------------------------*/
+
+.main-right {
+    width: 302px;
     display: inline-block;
     vertical-align: top;
-    width: 300px;
 }
+
+.my-day {
+    padding:5px;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.story-list {
+    list-style-type: none;
+    padding: 0;
+    width:100%;
+    margin:0;
+}
+
+.story-list-item {
+    padding: 5px 5px 5px 5px;
+}
+
+.story-list-start, .story-list-end{
+    margin:5px 0 10px 5px;
+}
+
+.story-avatar-outer {
+    padding:2px;
+    border-radius: 50%;
+    border: 2px solid #4080ff;
+}
+
+.story-avatar {
+    height: 48px;
+    width: 48px;
+    background-size:contain;
+    border-radius: 50%;   
+}
+
+.time-ago {
+    margin-top:5px;
+}
+
+/*----------------------- end of main right ------------------*/
+
+
+
+/*----------------------- end of main ------------------*/
+
+
+/*-------------------- Contacts ---------------------------*/
 
 .messages {
     position: fixed;

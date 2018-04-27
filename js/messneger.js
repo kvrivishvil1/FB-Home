@@ -80,13 +80,13 @@ var friends = [
 ];
 
 
-var e = document.querySelector('.messenger');
-var f = e.querySelector('.list-item');
+var a = document.querySelector('.messenger');
+var b = a.querySelector('.list-item');
 
 friends.forEach(function (element, idx) {
-    var clone = f.cloneNode(true);
-    if (idx == 0) clone = f;
+    var clone = b.cloneNode(true);
+    if (idx == 0) clone = b;
     clone.querySelector('.messenger-avatar').style.backgroundImage = element.src;
     clone.querySelector('.friend-name').innerHTML = element.name;
-    e.appendChild(clone);
+    a.appendChild(clone);
 });
