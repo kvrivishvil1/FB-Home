@@ -14,7 +14,7 @@
 <body>
     <header class="flex">
         <div class="container flex">
-            <div class="header-left  flex">
+            <div class="header-left inline-block flex">
                 <a href="#" class="fb-logo-out link inline-block">
                     <div class="fb-logo"></div>
                 </a>
@@ -29,7 +29,7 @@
                 </div>
                 <!-- /.search-area -->
             </div>
-            <div class="header-right">
+            <div class="header-right inline-block">
                 <div class="header-right-text inline-block">
                     <div class="inline-block">
                         <a href="index.html" class="avatar-link link">
@@ -80,37 +80,41 @@
 
                 </div>
                 <ul class="shortcuts list">
-                    <li class="navigation-bar-list-start">Shortcuts</li>
-                    <li class="navigation-bar-item">
+                    <li class="list-start">Shortcuts</li>
+                    <li class="list-item">
                         <a href="#">
                             <div class="navigation-pages-icon navigation-bar-icon"></div>
-                            <div class="navigation-bar-text">
-                            </div>
+                            <div class="navigation-bar-text hide-long"></div>
+                        </a>
+                        <a href="#">
+                            <div class="dots">●●●</div>
                         </a>
                     </li>
                     <script src="js/shortcuts.js"></script>
-                    <li class="navigation-bar-item-end">
-                        <a href="#" class="see-more">
-                            see more
-                        </a>
+                    <li class="list-end">
+                        <a href="#" class="see-more">see more</a>
                     </li>
                 </ul>
                 <ul class="explore list">
-                    <li class="navigation-bar-list-start">Explore</li>
-                    <li class="navigation-bar-item">
+                    <li class="list-start">Explore</li>
+                    <li class="list-item">
                         <a href="#">
                             <div class="navigation-pages-icon navigation-bar-icon"></div>
-                            <div class="navigation-bar-text">
-                            </div>
+                            <div class="navigation-bar-text hide-long"></div>
                         </a>
                     </li>
                     <script src="js/explore.js"></script>
-                    <li class="navigation-bar-item-end">
-                        <a href="#" class="see-more">
-                            see more
-                        </a>
+                    <li class="list-end">
+                        <a href="#" class="see-more">see more</a>
                     </li>
                 </ul>
+                <div class="list">
+                    <div class="list-start">Create</div>
+                    <a href="" class="create">ad</a> •
+                    <a href="" class="create">Page</a> •
+                    <a href="" class="create">Group</a> •
+                    <a href="" class="create">Event</a>
+                </div>
             </div>
             <div class="news-feed">
                 <div class="add-news">
@@ -125,9 +129,35 @@
         </div>
 
         <div class="messages">
-            dalj
+            <div class="instant-games">
+
+            </div>
+            <div class="contacts">
+                <ul class="messenger list">
+                    <li class="list-start cc">Contacts</li>
+                    <li class="list-item">
+                        <a href="#" class="justify flex">
+                            <div class="list-item-right inline-block">
+                                <div class="messenger-avatar inline-block"></div>
+                                <div class="friend-name hide-long inline-block">
+                                    asdasd
+                                </div>
+                            </div>
+                            <div class="active inline-block"></div>
+                        </a>
+                    </li>
+                    <script src="js/messneger.js"></script>
+                </ul>
+            </div>
         </div>
     </div>
+    <script>
+        window.onresize = function (event) {
+            var vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
+            var ch = document.querySelector('.contacts');
+            ch.style.height = (vh - 43 - 177 - 1) + 'px';
+        }
+    </script>
 </body>
 
 </html>
