@@ -55,6 +55,7 @@ header {
     background-size: auto;
     background-repeat: no-repeat;
     display: inline-block;
+    vertical-align: middle;
     height: 16px;
     width: 16px;
 }
@@ -63,6 +64,7 @@ header {
     background-size: auto;
     background-repeat: no-repeat;
     display: inline-block;
+    vertical-align: middle;
     height: 20px;
     width: 20px;
 }
@@ -299,10 +301,6 @@ header {
     vertical-align: middle;
 }
 
-.navigation-pages-icon {
-    vertical-align: middle;
-}
-
 .dots {
     color:#a5a5a5;
     font-size: 9px;
@@ -516,7 +514,8 @@ header {
     vertical-align: top;
 }
 
-.my-day {
+.main-right-item {
+    margin-top:15px;
     padding:5px;
     background-color: white;
     border-radius: 5px;
@@ -533,8 +532,15 @@ header {
     padding: 5px 5px 5px 5px;
 }
 
-.story-list-start, .story-list-end{
+.story-list-start {   
     margin:5px 0 10px 5px;
+    font-weight: bold;
+    color: #616770;
+}
+
+.story-list-end{
+    margin:5px 0 10px 5px;
+    
 }
 
 .story-avatar-outer {
@@ -552,6 +558,14 @@ header {
 
 .time-ago {
     margin-top:5px;
+}
+
+.recents {
+    margin:0;
+}
+
+.recent-link {
+    width: 100%;
 }
 
 /*----------------------- end of main right ------------------*/

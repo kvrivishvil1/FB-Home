@@ -168,7 +168,7 @@
             </div>
             <!-- ./news-feed -->
             <div class="main-right">
-                <div class="my-day">
+                <div class="main-right-item">
                     <ul class="m-day story-list">
                         <li class="story-list-start">Stories</li>
                         <li class="story-list-item">
@@ -191,7 +191,18 @@
                         </li>
                     </ul>
                 </div>
-                <!--./my-day-->
+                <!--main-right-item-->
+                <div class="main-right-item">
+                    <ul class="list recents">
+                        <li class="list-item">
+                            <a href="#" class="recent-link">
+                                <div class="icon-16px"></div>
+                                <div class="recent-text blue inline-block hide-long"></div>
+                            </a>
+                        </li>
+                        <script src="js/recents.js"></script>
+                    </ul>
+                </div>
             </div>
             <!--./main-left-->
         </div>
@@ -218,6 +229,7 @@
         </div>
     </div>
     <script>
+        document.querySelector('.main-right-item').style.marginTop = "0";
         window.onresize = function (event) {
             var vh = Math.max(document.documentElement.clientHeight, window.innerHeight || 0);
             var ch = document.querySelector('.contacts');
