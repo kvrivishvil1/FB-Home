@@ -48,13 +48,22 @@
                 <!-- /.header-right-text -->
                 <div class="header-right-icons inline-block">
                     <a onclick="showRequests()" class="header-icons-links">
-                        <div class="friend-request-icon header-icon icon-24px"></div>
+                        <div class="friend-request-h">
+                            <div class="friend-request-icon header-icon icon-24px"></div>
+                            <div class="friend-request-dropdown dropdown"><div></div></div>
+                        </div>
                     </a>
                     <a onclick="showMessages()" class="header-icons-links">
-                        <div class="messages-icon header-icon icon-24px"></div>
+                        <div class="messages-h">
+                            <div class="messages-icon header-icon icon-24px"></div>
+                            <div class="messages-dropdown dropdown"><div></div></div>
+                        </div>
                     </a>
                     <a id="notifications" onclick="showNotifications()" class="header-icons-links">
-                        <div class="notifications-icon header-icon icon-24px"></div>
+                        <div class="notifications-h">
+                            <div class="notifications-icon header-icon icon-24px"></div>
+                            <div class="notifications-dropdown dropdown"><div></div></div>
+                        </div>
                     </a>
                 </div>
                 <!-- /.header-right-icons -->
@@ -406,38 +415,8 @@
             var ch = document.querySelector('.contacts');
             ch.style.height = (vh - 43 - 93 - 1) + 'px';
         }
-
-        var requests = false;
-        function showRequests() {
-            console.log('req');
-            if (!requests) {
-
-            } else {
-
-            }
-        }
-
-        var messages = false;
-        function showMessages() {
-            console.log('mess');
-            if (!messages) {
-
-            } else {
-
-            }
-        }
-
-        var notifications = false
-        function showNotifications() {
-            console.log('not');
-            if (!notifications) {
-
-            } else {
-
-            }
-        }
-
     </script>
+    <script src="js/headerDropDown.js"></script>
 </body>
 
 </html>

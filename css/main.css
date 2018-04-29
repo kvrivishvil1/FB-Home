@@ -235,18 +235,79 @@ header {
     background-position: 0 -275px;
 }
 
+.freind-request-h {
+    position: relative;
+}
+
+.friend-request-dropdown div::after{
+    top: -8px;
+    left: 318px;
+}
+
+.messages-dropdown div::after{
+    top: -8px;
+    left: 316px;
+}
+
+.notifications-dropdown div::after{
+    top: -8px;
+    left:311px
+}
+
+.friend-request-dropdown div::after, .messages-dropdown div::after, .notifications-dropdown div::after{
+    content:"";
+    height:12px;
+    width: 12px;
+    position: absolute;
+    transform: rotate(45deg);
+    background-color:white; 
+    border-top:1px solid #eaeaea;
+    border-left:1px solid #eaeaea;
+    opacity: 1;
+}
+
+.notifications-h::after {
+    top: 27px;
+    left: 6px; 
+}
+
+.friend-request-dropdown {
+    left: -315px;
+}
+
+.messages-dropdown {
+    left: -310px;
+}
+
+.notifications-dropdown {
+    left: -305px;
+}
+
+.dropdown {
+    position: absolute;
+    height:400px;
+    width:350px;
+    top:34px;
+    border:1px solid #eaeaea;
+    background-color:white;
+    visibility: hidden;
+}
+
 .messages-icon {
     background-image: url(https://facebook.com/rsrc.php/v3/yx/r/pzdnQfNKajS.png);
     background-position: 0 -246px;
+    position: relative;
 }
 
 .notifications-icon {
     background-image: url(https://facebook.com/rsrc.php/v3/yw/r/HrH-7nX4RPy.png);
     background-position: 0 -425px;
+    position: relative;
 }
 
 .header-icons-links {
     padding: 22 22 22 22;
+    position: relative;
 }
 
 .help-icon {
