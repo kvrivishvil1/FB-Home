@@ -14,6 +14,15 @@ a {
     display: inline-block;
 }
 
+.clearfix:after {
+    visibility: hidden;
+    display: block;
+    font-size: 0;
+    content: " ";
+    clear: both;
+    height: 0;
+}
+
 header {
     z-index: 1;
     position: fixed;
@@ -74,6 +83,16 @@ header {
     background-repeat: no-repeat;
     height: 24px;
     width: 24px;
+}
+
+.header-left {
+    min-width:550px;
+    max-width:550px;
+}
+
+.header-right {
+    min-width: 303px;
+    max-width: 303px;
 }
 
 .fb-logo {
@@ -259,17 +278,49 @@ header {
 .main {
     padding-top:55px;
     width: 100%;
-    min-height: 100%;
     background-color: gainsboro;
 }
 
 /*----------------------- main-left ------------------*/
 
-.navigation-bar {    
-    vertical-align: top;
-    display: inline-block;
+.navigation-bar {   
     width: 190px;
     padding-right: 10px;
+    position:fixed; 
+}
+
+.nav-bar-avatar {
+    margin-bottom: 10px;
+}
+
+.navigation-avatar {  
+    background: url(../content/avatar.jpg);
+    background-size:contain;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.navigation-news {   
+    background-image: url(https://facebook.com/rsrc.php/v3/yl/r/7bRXeNHfJLD.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 0 -1304px;
+}
+
+.hovered {
+    background-color: #eaebed
+}
+
+.messenger-icon {
+    background-image: url(https://facebook.com/rsrc.php/v3/yl/r/7bRXeNHfJLD.png);
+    background-size: auto;
+    background-repeat: no-repeat;
+    background-position: 0 -989px;
+}
+
+.n-dots {
+    color:#a5a5a5;
+    font-size: 9px;
 }
 
 .list {
@@ -285,7 +336,7 @@ header {
 }
 
 .list-item:hover {
-    background-color: #ccc9c9;
+    background-color: #eaebed;
 }
 
 .hide-long {
@@ -297,6 +348,7 @@ header {
 .navigation-bar-text {
     color:black;
     width: 140px;
+    font-family: inherit;
     display: inline-block;
     vertical-align: middle;
 }
@@ -352,6 +404,7 @@ header {
 
 /*-------------------- main middle ----------------------*/
 .news-feed {
+    margin-left:200px;
     display: inline-block;
     width: 500px;
     padding-right: 10px;
@@ -363,7 +416,7 @@ header {
     height: 155px;
     background-color: white;
     overflow: hidden;
-    /* border: 1px solid #eaeaea; */
+    border: 1px solid #eaeaea;
     border-radius: 5px;
 }
 
@@ -510,8 +563,9 @@ header {
 
 .main-right {
     width: 302px;
-    display: inline-block;
-    vertical-align: top;
+    position: fixed;
+    margin-left:710px;
+    top:55px;
 }
 
 .main-right-item {
@@ -519,6 +573,7 @@ header {
     padding:5px;
     background-color: white;
     border-radius: 5px;
+    border: 1px solid #eaeaea;
 }
 
 .story-list {
@@ -533,14 +588,22 @@ header {
 }
 
 .story-list-start {   
-    margin:5px 0 10px 5px;
+    margin:5px 15px 5px 5px;
+    justify-content: space-between;
+}
+
+.story-dots:link, .story-dots:visited, .story-dots:hover, .story-dots:active {
+    color:gray;
+    font-size:9px;
+}
+
+.story-start {
     font-weight: bold;
     color: #616770;
 }
 
 .story-list-end{
     margin:5px 0 10px 5px;
-    
 }
 
 .story-avatar-outer {
@@ -568,10 +631,23 @@ header {
     width: 100%;
 }
 
+.languages {
+    width:85%;
+}
+
+.languages > * {
+    margin: 5px 0 5px 0;
+}
+
+.lang-link:link, .lang-link:visited, .lang-link:hover, .lang-link:active {
+    color: #365899;
+    text-decoration: none;
+}
+
+.not-active:link, .not-active:visited, .not-active:hover, .not-active:active {
+    color:  #c4c4c4;
+}
 /*----------------------- end of main right ------------------*/
-
-
-
 /*----------------------- end of main ------------------*/
 
 
@@ -587,19 +663,46 @@ header {
     max-height: 100%;
 }
 
-.instant-games {
+.contact-pages {
     position: fixed;
     right: 0;
     top: 43px;
-    width: 204px;
-    height:177px;
+    width: 195px;
+    height:93px;
     border-bottom: 1px solid #a0a0a0;
+}
+
+.contact-pages .story-list-start {
+    margin-top:15px;
+}
+
+.pages-item {
+    height: 50px;
+    width: 50px;
+    background-size: contain;
+    border-radius: 50%;
+}
+
+.arrow {
+    background-image: url(https://facebook.com/rsrc.php/v3/yD/r/L3R4nDgkX3C.png);
+    background-repeat: no-repeat;
+    background-size: auto;
+    width:8px;
+    height:12px;
+}
+
+.left {
+    background-position: -22px -41px;
+}
+
+.right {
+    background-position: 0 -55px;
 }
 
 .contacts {
     position: fixed;
     right: 0;
-    top: 220px;
+    top: 140px;
     width: 230px;
     margin-right:-26px;
     overflow-y: scroll;

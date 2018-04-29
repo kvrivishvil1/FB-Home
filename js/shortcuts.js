@@ -8,21 +8,6 @@ var shortcuts = [
         name: "Pit Bull Club Georgia",
         src: "url(https://facebook.com/rsrc.php/v3/yH/r/EnDFPxMkEp1.png)",
         offset: "0 -315px",
-    },
-    {
-        name: "Drag Race Georgia",
-        src: "url(https://facebook.com/rsrc.php/v3/yH/r/EnDFPxMkEp1.png)",
-        offset: "0 -315px",
-    },
-    {
-        name: "BMW Club Goergia",
-        src: "url(https://facebook.com/rsrc.php/v3/yH/r/EnDFPxMkEp1.png)",
-        offset: "0 -315px",
-    },
-    {
-        name: "///Bmw E39 Club Georgia",
-        src: "url(https://facebook.com/rsrc.php/v3/yH/r/EnDFPxMkEp1.png)",
-        offset: "0 -315px",
     }
 ];
 

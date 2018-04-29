@@ -28,7 +28,7 @@ var explore = [
         name: "On This Day",
         src: "url(https://facebook.com/rsrc.php/v3/yF/r/CzRFvdHdJ0W.png)",
         offset: "0 -1489px"
-    }
+    },
 ];
 
 var a = document.querySelector('.explore');
